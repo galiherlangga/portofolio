@@ -1,0 +1,42 @@
+<div class="bg-gray-600 px-60 py-20 text-white hero">
+    <ul class="flex flex-row justify-between">
+        <li><h1 class="text-3xl -translate-y-3 logo">GE</h1></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <h1 class="pt-[60vh] text-8xl">Unleash the power of backend brilliance.</h1>
+</div>
+
+<style>
+    .hero {
+        position: relative;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+            0,
+            0,
+            0,
+            0.5
+        ); /* Adjust the alpha value (0.5) to control the darkness */
+        z-index: -1;
+    }
+
+    .hero{
+        background-image: url("/img/keyboard.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+    }
+
+    .logo {
+        font-family: "Silkscreen", cursive;
+    }
+</style>
